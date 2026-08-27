@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-canvas: #edeef0;
+  --color-brand-primary: #f97316;
+  --color-brand-hover: #ea580c;
+  --color-surface-subtle: #f0f1f3;
+  --color-surface-subtle-hover: #e6e7eb;
+  --color-surface-card: #ffffff;
+  --color-nav-active: #202328;
+  --color-border-card: #e5e7eb;
+  --color-content-primary: #18181b;
+  --color-content-secondary: #52525b;
+  --color-content-muted: #a1a1aa;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-canvas);
+  color: var(--color-content-primary);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Diagonal Stripe Utilities for Volume Bars */
+.stripe-green {
+  background: repeating-linear-gradient(
+    -45deg,
+    #22c55e,
+    #22c55e 3px,
+    #16a34a 3px,
+    #16a34a 6px
+  );
+}
+
+.stripe-blue {
+  background: repeating-linear-gradient(
+    -45deg,
+    #3b82f6,
+    #3b82f6 3px,
+    #2563eb 3px,
+    #2563eb 6px
+  );
+}
+
+.stripe-pink {
+  background: repeating-linear-gradient(
+    -45deg,
+    #ec4899,
+    #ec4899 3px,
+    #db2777 3px,
+    #db2777 6px
+  );
+}
+
+.stripe-funnel-blue {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(59, 130, 246, 0.85),
+    rgba(59, 130, 246, 0.85) 3px,
+    rgba(37, 99, 235, 0.95) 3px,
+    rgba(37, 99, 235, 0.95) 7px
+  );
+}
+
+.stripe-funnel-light {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(96, 165, 250, 0.4),
+    rgba(96, 165, 250, 0.4) 3px,
+    rgba(59, 130, 246, 0.5) 3px,
+    rgba(59, 130, 246, 0.5) 7px
+  );
 }

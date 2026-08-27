@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import { LinkIcon, CaretDownIcon } from "../icons/nav-icons";
-import { PlusIcon } from "../icons/feature-icons";
+import { LinkIcon } from "../icons/nav-icons";
 import { DateFilterGroup } from "./date-filter-group";
+import { CadenceDropdown } from "./cadence-dropdown";
+import { AddWidgetButton } from "./add-widget-button";
 
 export function OverviewHeader() {
   return (
@@ -22,16 +23,8 @@ export function OverviewHeader() {
 
       <div className="flex flex-wrap items-center gap-2.5">
         <DateFilterGroup />
-
-        <button className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-subtle hover:bg-surface-subtle-hover text-content-primary text-xs font-normal transition-colors cursor-pointer">
-          <span>Daily</span>
-          <CaretDownIcon className="w-3 h-3 text-content-muted" />
-        </button>
-
-        <button className="flex items-center gap-1 px-3.5 py-2 rounded-xl bg-surface-subtle hover:bg-surface-subtle-hover text-content-primary text-xs font-normal transition-colors cursor-pointer">
-          <span>Add widget</span>
-          <PlusIcon className="w-3 h-3 text-content-secondary" />
-        </button>
+        <CadenceDropdown />
+        <AddWidgetButton />
       </div>
     </div>
   );

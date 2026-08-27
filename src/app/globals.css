@@ -21,14 +21,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Diagonal Stripe Utilities for Volume Bars */
+/* Diagonal Stripe Patterns for Progress Bars */
 .stripe-green {
   background: repeating-linear-gradient(
     -45deg,
     #22c55e,
-    #22c55e 3px,
-    #16a34a 3px,
-    #16a34a 6px
+    #22c55e 2.5px,
+    #15803d 2.5px,
+    #15803d 5px
   );
 }
 
@@ -36,19 +36,19 @@ body {
   background: repeating-linear-gradient(
     -45deg,
     #3b82f6,
-    #3b82f6 3px,
-    #2563eb 3px,
-    #2563eb 6px
+    #3b82f6 2.5px,
+    #1d4ed8 2.5px,
+    #1d4ed8 5px
   );
 }
 
 .stripe-pink {
   background: repeating-linear-gradient(
     -45deg,
-    #ec4899,
-    #ec4899 3px,
-    #db2777 3px,
-    #db2777 6px
+    #f43f5e,
+    #f43f5e 2.5px,
+    #be123c 2.5px,
+    #be123c 5px
   );
 }
 
@@ -59,15 +59,5 @@ body {
     rgba(59, 130, 246, 0.85) 3px,
     rgba(37, 99, 235, 0.95) 3px,
     rgba(37, 99, 235, 0.95) 7px
-  );
-}
-
-.stripe-funnel-light {
-  background: repeating-linear-gradient(
-    -45deg,
-    rgba(96, 165, 250, 0.4),
-    rgba(96, 165, 250, 0.4) 3px,
-    rgba(59, 130, 246, 0.5) 3px,
-    rgba(59, 130, 246, 0.5) 7px
   );
 }

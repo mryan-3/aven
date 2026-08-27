@@ -22,17 +22,17 @@ export function Navbar() {
   return (
     <header className="flex items-center justify-between py-2 border-b border-border-card/60 mb-6">
       <div className="flex items-center gap-2.5">
-        <div className="w-8 h-8 relative rounded-lg overflow-hidden shadow-2xs">
+        <div className="w-7 h-7 relative rounded-lg overflow-hidden shadow-2xs">
           <Image
             src="/logo.png"
             alt="Aven Logo"
-            width={32}
-            height={32}
+            width={28}
+            height={28}
             className="object-cover"
             priority
           />
         </div>
-        <span className="font-bold text-lg tracking-tight text-content-primary">
+        <span className="font-semibold text-base tracking-tight text-content-primary">
           aven
         </span>
       </div>

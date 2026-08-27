@@ -4,6 +4,7 @@ import React from "react";
 import { DashboardShell } from "../components/layout/dashboard-shell";
 import { OverviewHeader } from "../components/header/overview-header";
 import { PaymentFunnelCard } from "../components/funnel/payment-funnel-card";
+import { GrossVolumeCard } from "../components/volume/gross-volume-card";
 
 export default function HomePage() {
   return (
@@ -22,8 +23,10 @@ export default function HomePage() {
 
         {/* Right Column: Gross Volume & Insights */}
         <div className="lg:col-span-4 flex flex-col gap-6">
+          <GrossVolumeCard />
+
           <div className="border-2 border-dashed border-neutral-200 rounded-2xl p-14 text-center text-neutral-400 text-xs">
-            Next section: Gross Volume & Insights Card
+            Next section: Insights Card
           </div>
         </div>
       </div>

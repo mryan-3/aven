@@ -28,15 +28,15 @@ const SEGMENTS = [
 
 export function GrossVolumeCard() {
   return (
-    <div className="bg-surface-card rounded-2xl border border-border-card/80 p-6 shadow-xs flex flex-col justify-between">
+    <div className="bg-surface-card rounded-3xl border border-border-card/80 p-7 md:p-8 shadow-xs flex flex-col justify-between h-full w-full">
       <div>
         <VolumeHeader />
         <VolumeMetric />
       </div>
 
-      <div className="border-t border-neutral-100/90 my-5" />
+      <div className="border-t border-neutral-100/90 my-auto py-2" />
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-5">
         {SEGMENTS.map((segment) => (
           <VolumeSegmentItem
             key={segment.label}

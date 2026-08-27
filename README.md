@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aven - Payment and Business Analytics Dashboard UI
+
+A modern financial analytics dashboard concept built with Next.js, Tailwind CSS, and TypeScript. Focuses on actionable clarity, breaking down payment performance, conversion funnels, customer retention, and revenue intelligence into intuitive interactive visual sections.
+
+![Aven Dashboard](public/screenshot.png)
+
+---
+
+## Features
+
+- **3D Isometric Payment Funnel**: Stepped conversion funnel with sloped 3D vector facets, dynamic blue hover states, and level metrics.
+- **Natural Language AI Exploration Bar**: Interactive query prompt bar with real-time `/token` command tag highlighting.
+- **Gross Volume and Segment Breakdown**: Primary revenue total paired with diagonal striped progress bars across payment channels.
+- **Stepped Retention Chart**: Silhouette boundary area chart with fine vertical striped fill and peak percentage indicator.
+- **Activity and Equalizer Cards**: Transactions and Customer distribution cards powered by vertical dot-matrix equalizers and period comparisons.
+- **AI Insights Card**: Grainy sunset mesh gradient backdrop with frosted 3D glass geometry and contextual recovery projections.
+- **Interactive Header Controls**: Comparative date range capsule with presets, cadence dropdown, and an Add Widget drawer.
+
+---
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons and Visuals**: Pure custom SVG vector components
+- **Language**: TypeScript
+- **Package Manager**: pnpm
+
+---
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository**:
+   ```bash
+   git clone git@github.com:mryan-3/aven.git
+   cd aven
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Install dependencies**:
+   ```bash
+   pnpm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Run the development server**:
+   ```bash
+   pnpm dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Open in browser**:
+   Navigate to `http://localhost:3000`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License.

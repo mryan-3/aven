@@ -2,8 +2,11 @@ import React from "react";
 
 export function SparkleIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 256 256" fill="currentColor">
-      <path d="M213.66,122.34l-40-40a8,8,0,0,0-11.32,11.32L188.69,120H136a8,8,0,0,0,0,16h52.69l-26.35,26.34a8,8,0,0,0,11.32,11.32l40-40A8,8,0,0,0,213.66,122.34ZM104,40A64.07,64.07,0,0,0,40,104a8,8,0,0,0,16,0,48.05,48.05,0,0,1,48-48,8,8,0,0,0,0-16Zm40,176a8,8,0,0,0-8-8,48.05,48.05,0,0,1-48-48,8,8,0,0,0-16,0,64.07,64.07,0,0,0,64,64A8,8,0,0,0,144,216Z" />
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      {/* Primary 4-point star */}
+      <path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2z" />
+      {/* Secondary smaller 4-point sparkle */}
+      <path d="M19 16l1.2 3.3L23.5 20.5l-3.3 1.2L19 25l-1.2-3.3L14.5 20.5l3.3-1.2L19 16z" opacity="0.8" transform="scale(0.5) translate(14, 8)" />
     </svg>
   );
 }

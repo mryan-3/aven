@@ -21,7 +21,7 @@ export function UserProfile() {
         <span className="w-2 h-2 bg-brand-primary rounded-full absolute top-2 right-2 ring-2 ring-white" />
       </button>
 
-      <div className="w-9 h-9 rounded-full p-[1.5px] bg-linear-to-tr from-amber-400 via-rose-400 to-indigo-500 cursor-pointer shadow-2xs">
+      <div className="w-9 h-9 rounded-full p-0.5 bg-linear-to-tr from-amber-400 via-rose-400 to-indigo-500 cursor-pointer shadow-2xs">
         <div className="w-full h-full rounded-full overflow-hidden bg-surface-card">
           <img
             src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"

@@ -7,6 +7,7 @@ import { PaymentFunnelCard } from "../components/funnel/payment-funnel-card";
 import { GrossVolumeCard } from "../components/volume/gross-volume-card";
 import { RetentionCard } from "../components/retention/retention-card";
 import { ActivityCardsSection } from "../components/activity/activity-cards-section";
+import { InsightsCard } from "../components/insights/insights-card";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,7 @@ export default function HomePage() {
       <OverviewHeader />
 
       <div className="flex flex-col gap-6 w-full">
-        {/* Top Row: Payments Funnel (8 cols) & Gross Volume (4 cols) matching heights */}
+        {/* Top Row: Payments Funnel (8 cols) & Gross Volume (4 cols) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           <div className="lg:col-span-8 flex">
             <PaymentFunnelCard />
@@ -36,9 +37,7 @@ export default function HomePage() {
           </div>
 
           <div className="lg:col-span-4 flex">
-            <div className="w-full border-2 border-dashed border-neutral-200 rounded-2xl p-14 text-center text-neutral-400 text-xs flex items-center justify-center">
-              Next section: Insights Card
-            </div>
+            <InsightsCard />
           </div>
         </div>
       </div>
